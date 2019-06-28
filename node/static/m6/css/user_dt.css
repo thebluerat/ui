@@ -1,0 +1,38 @@
+        .edge {
+            position: inherit;
+            border: 1px solid pink;
+            height: 100%;
+            margin: 70px 50px 60px 50px;
+        }
+
+        .inneredge {
+            position: inherit;
+            border: 2px solid pink;
+            display: block;
+            height: 500px;
+            margin: 130px 20px 20px 20px;
+            padding: 70px 0px 0px 0px;
+            text-align: center;
+        }
+
+.ourcompany {
+    
+    background-color: orange;
+    width: 300px;
+    height: 300px;
+    float: left;
+    display: inline-block;
+    font-size:6vw;
+    
+}
+
+.othercompany {
+    
+    background-color: mediumseagreen;
+    width: 300px;
+    height: 300px;
+    float: left;
+    display: inline-block;
+    
+}
+

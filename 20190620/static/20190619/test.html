@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>SPA</title>
+        <link rel="stylesheet" href="test.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script>
+            /****************************************************
+            * 게시판 만들기
+            * 기능 정의 5가지 + α
+            * 1) 작성      : 사용자에게 입력값을 받고 저장소(어디? local storage json 데이터를 받아서 )에 남기기
+            * 2) 목록 보기 : 저장소에 있는 데이터를 목록 화면으로 표현하기
+            * 3) 내용 보기  : 목록 중에 글 하나의 내용을 화면으로 표현하기
+            * 4) 수정      : 선택한 글을 수정하는 화면을 표현하고 저장하기
+            * 5) 삭제      : 선택한 글을 목록에서 빼고 저장하기
+            * α) 검색      : 목록에서 키워드를 담은 글을 찾아서 화면으로 표현하기
+            ****************************************************/
+            
+    
+            $(document).ready(function(){
+                
+                
+                if(location.search != ""){
+                    var param = location.search.replace("?","");
+                    var params = param.split("&");
+                    var row = {};
+                    for(var i = 0; i < params.length; i++){
+                        var map = params[i].split("=");
+                        var key = map[0];
+                        var value = 
+                        btoa(unescape(encodeURIComponent(decodeURI(map[1]))));
+                        row[key] = value;
+                    }
+                    var list = [];
+                    if(localStorage.getItem("list") != null){
+                        
+                        list = JSON.parse(localStorage.getItem("list"));
+                    }
+                    list[list.length] = row;
+                    localStorage.setItem("list", JSON.stringify(list));
+                    location.search = "";
+                            
+                }
+                $("li").click(function(){});
+            });
+        </script>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>목록</li>
+                <li><a href="test2.html">신규</a></li>
+            </ul>
+        </nav>
+        <section class="contents">
+            
+        </section>
+        <footer></footer>
+    </body>
+</html>

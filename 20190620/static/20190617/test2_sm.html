@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Jquery</title>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        
+        
+        <script>
+            $(document).ready(function(){
+                function cssEvent(target, style){
+                    console.log(target, style);
+                    $(target).css(style);
+                }
+                
+                var userList = [];  //밖으로 빼서 공용으로 씀
+
+                
+                
+               $("form").submit(function(e){
+                   //console.log(e);
+                   e.preventDefault();
+                   
+                   /*
+                   var result = $("#usr").val();    //get 실행
+                   console.log('$("#usr").val()', result);
+                   $("#usr").val("아무 거나");       //값을 넣으면 set 실행
+                   */
+                   
+                   var styleList = [
+                       {"backgroundColor":"yellow"},
+                       {"backgroundColor":"rgb(204, 204, 204)"}
+                   ];
+                   var tagList = ["#usr","#pwd"];
+                   var user = {};
+                   for(var i = 0; i < tagList.length; i++) {
+                       if($(tagList[i]).val() == ""){
+                           alert(tagList[i] + " 없음!");
+                           cssEvent(tagList[i], styleList[0]);
+                           return;
+                       }else {
+                           cssEvent(tagList[i], styleList[1]);
+                           user[tagList[i]] = $(tagList[i]).val();
+                       }
+                   }
+                   
+                   console.log("2", user, user["#usr"]);
+                   
+                   /*
+                   if($("#usr").val() == ""){
+                       //console.log("값 없음");
+                       alert("!이름이 없음!");
+                       //$("#usr").css("backgroundColor","yellow");
+                       //$("#usr").css("borderColor","blue");
+                       cssEvent("#usr", styleList[0]);
+                       return;
+                   }else {
+                       //$("#usr").css("borderColor", "rgb(204, 204, 204)");
+                       
+                      // $("#usr").css("backgroundColor", "rgb(204, 204, 204)");
+                       cssEvent("#usr", styleList[1]);
+                        
+                   }
+                       
+                    if($("#pwd").val() == ""){
+                       //console.log("값 없음");
+                       alert("!비밀번호 없음!");
+                      // $("#pwd").css("backgroundColor","yellow");
+                      // $("#pwd").css("borderColor","blue");
+                        cssEvent("#pwd", styleList[0]);
+                       return;
+                   }else {
+                       //$("#pwd").css("borderColor",  "rgb(204, 204, 204)");
+                       
+                      // $("#pwd").css("backgroundColor","rgb(204, 204, 204)" );
+                        cssEvent("#pwd", styleList[1]);
+                   }
+                   */
+                   
+                   /*
+                   localStorage.setItem("key", "value"); //입력(저장)
+                   localStorage.getItem("key");          //읽기
+                   localStorage.removeItem("key");       //삭제
+                   */
+                   
+                   userList[userList.length] = user;
+                   
+                   console.log(userList.length, userList);
+                   
+                    localStorage.setItem("users", JSON.stringify(userList));
+                   
+                   /* JSON 데이터 형식으로 변환
+                   JSON.stringify(object); //JSON 데이터 형식을 문자열로 변환
+                   JSON.parse("");         //문자열을 JSON 데이터 형식으로 변환
+                   */
+               }); 
+            });
+        
+        </script>
+    </head>
+    <body>
+        <div class="container">
+          
+          <form>
+            <div class="form-group">
+              <label for="usr">Name:</label>
+              <input type="text" class="form-control" id="usr" value="">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" id="pwd">
+            </div>
+            <button type="submit" class="btn btn-success">Success</button>
+  </form>
+</div>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JS</title>
+        <link rel="stylesheet" href="./js2.css">
+        <script>
+            function ev(){
+                
+            }
+            
+            var x = 9;
+            var y = 6;
+            
+            function onkeyDown(){
+                console.log("onkeyDown");
+                var keycode = event.keyCode;
+                console.log(keycode);
+                if(37 == keycode){
+                    x--;
+                }else if(38 == keycode){
+                    y--;
+                }else if(39 == keycode){
+                    x++;
+                }else if(40 == keycode) {
+                    y++;
+                }
+                
+                if(x < 0){
+                   x = 0;
+                }else if (x > 10){
+                    x = 10;
+                }
+                
+                if(y < 0){
+                    y = 0;
+                }else if(y > 7){
+                    y = 7;
+                }
+                
+                document.getElementsByTagName("div")[0].style.transform = "translateX(calc(50px * " + x + ")) translateY(calc(50px * " + y + "))";
+            }
+            
+            var mush = [
+                [0,0,0,0,0,0,0,0,0,0,0],
+                [0,2,1,1,1,1,1,1,1,1,0],
+                [0,0,1,0,0,1,0,0,1,0,0],
+                [0,0,1,0,0,1,1,1,1,0,0],
+                [0,1,1,0,0,1,3,3,1,0,0],
+                [0,1,1,1,1,1,0,0,1,0,0],
+                [0,0,1,0,1,1,0,0,1,1,0],
+                [0,0,0,0,0,0,0,0,0,0,0]
+            ];
+            
+            if (mush[] == 0){
+                
+            }
+            
+            
+            
+            
+        </script>
+    </head>
+    <body onload="ev()" onkeydown="onkeyDown()">
+        <section>
+            <div></div>
+        </section>
+    </body>
+</html>

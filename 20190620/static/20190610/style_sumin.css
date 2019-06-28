@@ -1,0 +1,35 @@
+.home_sm {
+    background-color: black;
+    text-align: center;
+
+}
+
+.john_sm {
+    /*margin: 10px 0px;*/
+    /*margin:0 0;*/
+    font-size: 64px;
+
+}
+
+.job_sm {
+    margin: 60px;
+}
+
+
+@media screen and (max-width: 600px) {
+    span {
+        display: none;
+    }
+}
+
+.center_sm {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-position: center;
+    background-image: url('https://www.w3schools.com/w3images/man_smoke.jpg');
+    height: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}

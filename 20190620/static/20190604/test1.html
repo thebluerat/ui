@@ -1,0 +1,47 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            html, body {margin:0; padding: 0;}
+            #header {height: 20px; background-color: burlywood;}
+            #footer {height: 40px; background-color: firebrick; clear: both;}
+            #contents div {
+                height: calc(100%/4); float: left;
+                border: 1px solid black;
+                box-sizing: border-box;
+            }
+            /*#wrap {width: 80%; margin-left: 10%}
+            #contents {padding: 0 10%;}*/
+            #contents {
+                transform: translate(30vw);
+                width: 40vw;
+                height:40vw;
+            }
+            .w20 {width: 20%;}
+            .w50 {width: 50%;}
+            .w60 {width: 60%;}
+            
+        </style>
+    </head>
+    <body>
+      
+    <div id="header">header</div>
+       
+        <div id="contents">
+            <div class="w20"></div>
+            <div class="w60"></div>
+            <div class="w20"></div>
+            <div class="w50"></div>
+            <div class="w50"></div>
+            <div class="w50"></div>
+            <div class="w50"></div>
+            <div class="w20"></div>
+            <div class="w60"></div>
+            <div class="w20"></div>
+    
+        </div>
+       
+      <div id="footer">footer</div>    
+    </body>
+</html>

@@ -1,0 +1,161 @@
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+.bar {
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid grey;
+}
+
+.logo {
+    font-size: 30px;
+    text-align: center;
+    width: 60px;
+    margin: 40px 0px 10px 120px
+    
+}
+
+.login {
+    float: right;
+    padding: 10px 20px;
+    margin-right: 100px;
+    background-color: dodgerblue;
+    cursor: pointer;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    
+}
+
+.subject {
+            margin: 70px 0px 10px 3%;
+            padding: 0px 40px;
+            float: left;
+            font-size: 32px;
+            
+        }
+
+        .inneredge {
+            position: inherit;
+            border: 2px solid grey;
+            display: block;
+            height: 500px;
+            margin: 0px 20px 20px 20px;
+            padding: 70px 0px 0px 0px;
+            clear: both;
+            
+        }
+
+.mole {
+    background-color: #3b73a3;
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin-left: 15%;
+    border-radius: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.octopus {
+    background-color: #b45e90;
+    width: 250px;
+    height: 250px;
+    float: right;
+    margin-right: 15%;
+    border-radius: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    
+}
+
+
+@media screen and (max-width: 900px) {
+       .subject {
+        margin: 0px 0px 0px 3%;
+    }
+    
+    .inneredge {
+/*        padding: 0;*/
+        height: 380px;
+    } 
+    
+    .mole {
+        width:230px;
+        height: 230px;
+        margin-left: 10%
+    }
+    
+    .octopus {
+        width:230px;
+        height: 230px;
+        margin-right: 10%
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .mole {
+        width:200px;
+        height: 200px;
+        margin-left: 10%
+    }
+    
+    .octopus {
+        width:200px;
+        height: 200px;
+        margin-right: 10%
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+            .logo {
+                display: none;
+            }
+            .inneredge {
+                height: 350px;
+                padding: 30px 0px 0px 0px;
+            }
+            .login {
+                display: none;
+            }
+            
+            .bar {
+                border-bottom: none;
+            }
+            .subject {
+                margin: 0px 0px 10px 3%;
+            }
+            .mole {
+                width: 250px;
+                height: 150px;
+                border-radius: 30px;
+/*                display: block;*/
+                margin-left: 22.5%;
+                margin-bottom: 25px;
+                
+            }
+
+            .octopus {
+                width: 250px;
+                height: 150px;
+                border-radius: 30px;
+/*                margin: auto;*/
+                margin-right: 22.5%;
+                margin-bottom: 15px;
+                clear: left;
+            }
+            
+            
+}
+    
+       
+    
