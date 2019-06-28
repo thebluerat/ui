@@ -139,7 +139,7 @@
                 height: 150px;
                 border-radius: 30px;
 /*                display: block;*/
-                margin-left: 22.5%;
+                margin-left: calc(50%-125px);
                 margin-bottom: 25px;
                 
             }
@@ -149,7 +149,7 @@
                 height: 150px;
                 border-radius: 30px;
 /*                margin: auto;*/
-                margin-right: 22.5%;
+                margin-right: calc(50%-125px);
                 margin-bottom: 15px;
                 clear: left;
             }

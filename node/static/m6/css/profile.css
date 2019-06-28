@@ -78,7 +78,7 @@
 
 .m10 {
 
-    margin-bottom: 10px;
+    height: 40px;
     width: 250px;
 }
 
@@ -106,9 +106,9 @@
 @media screen and (max-width: 900px) {
     
     .contents {
-        position: fixed;
-        left: 430px;
-        top: 360px;
+/*        position: fixed;*/
+/*        left: 430px;*/
+/*        top: 360px;*/
         float: left;
         
     }
@@ -121,6 +121,8 @@
         padding: 50px 0px 0px 0px;
         height: 450px;
     }
+    
+    
     
 }
 
@@ -159,7 +161,7 @@
         float: left;
 */
         position: absolute;
-        transform: translate(-145%, -200%);        
+        transform: translate(-45%, -80%);        
     }
     
     .button {
@@ -167,5 +169,7 @@
         transform: translate(-50%, -90%);
             
     }
+    
+    
 }
        
