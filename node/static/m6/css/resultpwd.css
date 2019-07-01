@@ -4,6 +4,11 @@
             padding: 0;
         }
 
+        input {
+           -webkit-appearance: none;
+           -webkit-border-radius: 0;
+        }
+
 .bar {
     width: 100%;
     height: 50px;
@@ -15,7 +20,7 @@
     text-align: center;
     width: 60px;
     margin: 40px 0px 10px 120px
-    
+
 }
 
 .login {
@@ -27,9 +32,9 @@
     border: none;
     color: white;
     border-radius: 8px;
-    
+
 }
-       
+
 
 
 
@@ -43,13 +48,13 @@
             padding: 70px 0px 0px 0px;
         }
 
-        
+
 .resultbox {
     border: 1px solid lightgrey;
     background-color: lightgrey;
     width: 60%;
     height: 300px;
-    
+
 }
 
 .resulttxt {
@@ -59,7 +64,7 @@
 }
 
 .ok {
-            
+
             clear: both;
             margin: 40px;
             position: relative;
@@ -81,7 +86,7 @@
     .subject {
         margin: 0px 0px 0px 3%;
     }
-    
+
     .inneredge {
         padding: 30px;
         height: 420px;
@@ -98,29 +103,29 @@
                 margin: 50px 20px 20px 20px;
                 padding:20px 0px;
                 position: relative;
-                
+
             }
             .login {
                 display: none;
             }
-            
+
             .bar {
                 border-bottom: none;
             }
-    
+
             .resultbox {
                 width: 80%;
                 height: 350px;
             }
-            
+
             .ok {
-            
+
 /*            clear: both;*/
             margin: 0px;
 /*            position: relative;*/
             top: 0px;
             }
-    
+
             .button {
                margin-top: -300px;
                 position: absolute;

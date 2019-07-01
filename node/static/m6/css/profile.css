@@ -4,6 +4,11 @@
             padding: 0;
         }
 
+        input {
+           -webkit-appearance: none;
+           -webkit-border-radius: 0;
+        }
+
 .bar {
     width: 100%;
     height: 50px;
@@ -15,7 +20,7 @@
     text-align: center;
     width: 60px;
     margin: 40px 0px 10px 120px
-    
+
 }
 
 .login {
@@ -27,7 +32,7 @@
     border: none;
     color: white;
     border-radius: 8px;
-    
+
 }
 
 .subject {
@@ -35,7 +40,7 @@
             padding: 0px 40px;
             float: left;
             font-size: 32px;
-            
+
         }
 
         .inneredge {
@@ -57,11 +62,11 @@
 }
 
 .contents {
-    position:absolute; 
-    top:50%; left:50%; 
+    position:absolute;
+    top:50%; left:50%;
     transform:translate(-250px, -100px);
     width: 250px;
-    
+
 }
 
 .txt {
@@ -73,7 +78,7 @@
 */
     height: 30px;
     float: left;
-    
+
 }
 
 .m10 {
@@ -104,26 +109,26 @@
         }
 
 @media screen and (max-width: 900px) {
-    
+
     .contents {
 /*        position: fixed;*/
 /*        left: 430px;*/
 /*        top: 360px;*/
         float: left;
-        
+
     }
-    
+
           .subject {
         margin: 0px 0px 0px 3%;
     }
-    
+
         .inneredge {
         padding: 50px 0px 0px 0px;
         height: 450px;
     }
-    
-    
-    
+
+
+
 }
 
 
@@ -134,25 +139,25 @@
             .inneredge {
                 height: 350px;
                 padding:35px 0px;
-                
+
             }
             .login {
                 display: none;
             }
-            
+
             .bar {
                 border-bottom: none;
-                
+
             }
     .subject {
         margin: 0px 0px 10px 3%;
     }
-    
+
     .greybox {
         width: 80%;
         height: 350px;
     }
-    
+
         .contents {
 /*
         position: fixed;
@@ -161,15 +166,14 @@
         float: left;
 */
         position: absolute;
-        transform: translate(-45%, -80%);        
+        transform: translate(-45%, -80%);
     }
-    
+
     .button {
         position: absolute;
         transform: translate(-50%, -90%);
-            
+
     }
-    
-    
+
+
 }
-       

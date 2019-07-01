@@ -4,6 +4,11 @@
             padding: 0;
         }
 
+        input {
+           -webkit-appearance: none;
+           -webkit-border-radius: 0;
+        }
+
 .bar {
     width: 100%;
     height: 50px;
@@ -15,7 +20,7 @@
     text-align: center;
     width: 60px;
     margin: 40px 0px 10px 120px
-    
+
 }
 
 .login {
@@ -27,7 +32,7 @@
     border: none;
     color: white;
     border-radius: 8px;
-    
+
 }
 
 .subject {
@@ -35,7 +40,7 @@
             padding: 0px 40px;
             float: left;
             font-size: 32px;
-            
+
         }
 
         .inneredge {
@@ -46,7 +51,7 @@
             margin: 0px 20px 20px 20px;
             padding: 70px 0px 0px 0px;
             clear: both;
-            
+
         }
 
 .mole {
@@ -73,7 +78,7 @@
     color: white;
     cursor: pointer;
     border: none;
-    
+
 }
 
 
@@ -81,18 +86,18 @@
        .subject {
         margin: 0px 0px 0px 3%;
     }
-    
+
     .inneredge {
 /*        padding: 0;*/
         height: 380px;
-    } 
-    
+    }
+
     .mole {
         width:230px;
         height: 230px;
         margin-left: 10%
     }
-    
+
     .octopus {
         width:230px;
         height: 230px;
@@ -106,7 +111,7 @@
         height: 200px;
         margin-left: 10%
     }
-    
+
     .octopus {
         width:200px;
         height: 200px;
@@ -127,7 +132,7 @@
             .login {
                 display: none;
             }
-            
+
             .bar {
                 border-bottom: none;
             }
@@ -141,7 +146,7 @@
 /*                display: block;*/
                 margin-left: calc(50%-125px);
                 margin-bottom: 25px;
-                
+
             }
 
             .octopus {
@@ -153,9 +158,6 @@
                 margin-bottom: 15px;
                 clear: left;
             }
-            
-            
+
+
 }
-    
-       
-    
